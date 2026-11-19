@@ -1,0 +1,411 @@
+\<!DOCTYPE html>
+
+\<html lang="en"> \<head>     \<meta charset="UTF-8">     \<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>LUMIÈRE | Luxury Skincare</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+        width: 100%;
+    }
+
+    .product-card {
+        min-width: 0;
+        text-align: center;
+    }
+
+    .product-photo {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 18px;
+    }
+
+    @media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+\</head>
+
+\<body>
+
+```
+<!-- LOADING SCREEN -->
+<div id="loader">
+    <h1>LUMIÈRE</h1>
+    <p>THE ART OF SKINCARE</p>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress"></div>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="#home" class="logo">LUMIÈRE</a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#collection">Collection</a>
+        <a href="#ritual">Your Ritual</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <p class="eyebrow">A NEW ERA OF SKINCARE</p>
+
+        <h1>
+            Let Your Skin<br>
+            <span>Speak Elegance.</span>
+        </h1>
+
+        <p>
+            Discover the beauty of thoughtful skincare,
+            where science meets the art of self-care.
+        </p>
+
+        <a href="#collection" class="hero-btn">
+            Explore Collection ↗
+        </a>
+    </div>
+
+    <div class="hero-visual">
+
+    <div class="hero-circle"></div>
+
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+
+    <div class="floating-bubble bubble-one"></div>
+    <div class="floating-bubble bubble-two"></div>
+    <div class="floating-bubble bubble-three"></div>
+
+    <div class="serum-showcase">
+        <div class="serum-cap"></div>
+        <div class="serum-bottle">
+            <span>LUMIÈRE</span>
+            <small>RADIANCE SERUM</small>
+            <div class="serum-liquid"></div>
+        </div>
+    </div>
+
+    <div class="hero-text">BEAUTY IN EVERY DROP</div>
+
+</div>
+
+</section>
+
+<!-- OUR STORY -->
+<section class="story" id="story">
+
+    <p class="eyebrow">THE LUMIÈRE PHILOSOPHY</p>
+
+    <h2>Beauty is a feeling,<br>not a formula.</h2>
+
+    <p>
+        We believe skincare should be more than a routine.
+        It should be a beautiful moment of care, confidence
+        and connection with yourself.
+    </p>
+
+</section>
+
+<!-- PRODUCT COLLECTION -->
+<section class="collection" id="collection">
+
+    <div class="section-heading">
+        <p class="eyebrow">CURATED FOR YOUR SKIN</p>
+        <h2>The Collection</h2>
+        <p>Three essentials. One beautiful ritual.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- RADIANCE SERUM -->
+<article class="product-card">
+
+    <img
+        src="images/serum.png.jpeg"
+        alt="Radiance Serum"
+        class="product-photo"
+    >
+
+    <p class="product-tag">BESTSELLER · 01</p>
+
+    <h3>Radiance Serum</h3>
+
+    <p>Your daily glow ritual.</p>
+
+    <div class="product-details">
+
+        <p>
+            A lightweight serum designed to complement
+            your daily skincare routine.
+        </p>
+
+        <h4>KEY INGREDIENTS</h4>
+        <p>Vitamin C · Hyaluronic Acid · Aloe Vera</p>
+
+        <h4>BENEFITS</h4>
+        <ul>
+            <li>Supports a radiant-looking complexion</li>
+            <li>Helps maintain skin hydration</li>
+            <li>Leaves skin feeling refreshed</li>
+        </ul>
+
+        <h4>SUITABLE FOR</h4>
+        <p>Normal · Oily · Combination skin</p>
+
+        <h4>HOW TO USE</h4>
+        <p>Apply as directed on the product label. Patch test before first use.</p>
+
+    </div>
+
+    <button class="product-btn details-toggle">
+        Explore Details ↗
+    </button>
+
+</article>
+
+        <!-- CLOUD CREAM -->
+<article class="product-card">
+
+    <img
+        src="images/cream.png.jpeg"
+        alt="Cloud Cream"
+        class="product-photo"
+    >
+
+    <p class="product-tag">DAILY ESSENTIAL · 02</p>
+
+    <h3>Cloud Cream</h3>
+
+    <p>A soft moment of care.</p>
+
+    <div class="product-details">
+
+        <p>
+            A comforting moisturizer designed to complement
+            your everyday skincare routine.
+        </p>
+
+        <h4>KEY INGREDIENTS</h4>
+        <p>Glycerin · Shea Butter · Aloe Vera</p>
+
+        <h4>BENEFITS</h4>
+        <ul>
+            <li>Helps maintain skin hydration</li>
+            <li>Leaves skin feeling soft</li>
+            <li>Supports a comfortable skin feel</li>
+        </ul>
+
+        <h4>SUITABLE FOR</h4>
+        <p>Normal · Dry · Combination skin</p>
+
+        <h4>HOW TO USE</h4>
+        <p>Apply a suitable amount to clean skin as directed on the product label.</p>
+
+    </div>
+
+    <button class="product-btn details-toggle">
+        Explore Details ↗
+    </button>
+
+</article>
+       <!-- VELVET CLEANSER -->
+<article class="product-card">
+
+    <img
+        src="images/cleanser.png.jpeg"
+        alt="Velvet Cleanser"
+        class="product-photo"
+    >
+
+    <p class="product-tag">GENTLE CARE · 03</p>
+
+    <h3>Velvet Cleanser</h3>
+
+    <p>A fresh beginning for your skin.</p>
+
+    <div class="product-details">
+
+        <p>
+            A gentle cleansing concept designed for a
+            refreshing everyday skincare ritual.
+        </p>
+
+        <h4>KEY INGREDIENTS</h4>
+        <p>Glycerin · Aloe Vera · Green Tea</p>
+
+        <h4>BENEFITS</h4>
+        <ul>
+            <li>Helps remove everyday impurities</li>
+            <li>Leaves skin feeling refreshed</li>
+            <li>Supports a comfortable cleansing routine</li>
+        </ul>
+
+        <h4>SUITABLE FOR</h4>
+        <p>Normal · Oily · Combination skin</p>
+
+        <h4>HOW TO USE</h4>
+        <p>Use as directed on the product label and rinse thoroughly.</p>
+
+    </div>
+
+    <button class="product-btn details-toggle">
+        Explore Details ↗
+    </button>
+
+</article>
+    </div>
+
+</section>
+<!-- LUMIERE SKIN DISCOVERY -->
+
+<section class="skin-discovery" id="skin-discovery">
+
+    <p class="eyebrow">A LITTLE ABOUT YOUR SKIN</p>
+
+    <h2>Discover Your Skin</h2>
+
+    <p>Answer a few questions and find your skincare match.</p>
+
+    <div class="skin-quiz">
+
+        <div class="quiz-question">
+            <h3>01. How would you describe your skin?</h3>
+
+            <select id="skinType">
+                <option value="">Choose your skin type</option>
+                <option value="oily">Oily</option>
+                <option value="dry">Dry</option>
+                <option value="combination">Combination</option>
+                <option value="normal">Normal</option>
+                <option value="sensitive">Sensitive</option>
+                <option value="unsure">Not sure</option>
+            </select>
+        </div>
+
+        <div class="quiz-question">
+            <h3>02. What is your main skincare concern?</h3>
+
+            <select id="skinConcern">
+                <option value="">Choose your concern</option>
+                <option value="dullness">Dull-looking skin</option>
+                <option value="dryness">Dryness</option>
+                <option value="oil">Excess oil</option>
+                <option value="sensitivity">Skin sensitivity</option>
+                <option value="hydration">Hydration</option>
+            </select>
+        </div>
+
+        <div class="quiz-question">
+            <h3>03. What kind of skincare do you prefer?</h3>
+
+            <select id="skinPreference">
+                <option value="">Choose your preference</option>
+                <option value="lightweight">Lightweight products</option>
+                <option value="hydrating">Hydrating products</option>
+                <option value="gentle">Gentle skincare</option>
+                <option value="simple">Simple daily routine</option>
+            </select>
+        </div>
+
+        <button id="findMatch" class="product-btn">
+            Discover My Skin Match ↗
+        </button>
+
+        <div id="skinResult"></div>
+
+    </div>
+
+</section>
+
+<!-- YOUR RITUAL -->
+<section class="ritual" id="ritual">
+
+    <p class="eyebrow">MADE FOR YOUR MOMENTS</p>
+
+    <h2>Create Your Ritual</h2>
+
+    <p>Choose the feeling you want your skincare routine to bring.</p>
+
+    <div class="ritual-options">
+
+        <button data-ritual="Glow">Radiance ✨</button>
+
+        <button data-ritual="Hydration">Hydration 💧</button>
+
+        <button data-ritual="Freshness">Freshness 🌸</button>
+
+    </div>
+
+    <p id="ritual-result">
+        Your perfect ritual begins here.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>LUMIÈRE</h2>
+
+    <p>The art of feeling beautiful.</p>
+
+    <p>© 2026 LUMIÈRE. All rights reserved.</p>
+
+</footer>
+<!-- LUMIERE PRODUCT POPUP -->
+
+<div class="product-modal" id="productModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <div class="modal-visual">
+            <img src="" alt="Product" class="modal-image" id="modalImage">
+        </div>
+
+        <div class="modal-info">
+
+            <p class="product-tag">LUMIÈRE SIGNATURE COLLECTION</p>
+
+            <h2 id="modalTitle"></h2>
+
+            <div id="modalDescription"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+\</body>
+\</html>
+
+
+    
+
+    
+                
